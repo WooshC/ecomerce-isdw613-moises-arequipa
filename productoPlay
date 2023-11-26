@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Play Station</title>
+    </head>
+    <body>
+        <h1>PlayStation</h1>
+        <img src="imagenes/71MbhtHabaL.jpg" width="600">
+        <p> Imagina una consola de próxima generación que redefine la experiencia de juego. Presentamos la Consola [Nombre Genérico], la última joya en el mundo del entretenimiento digital. Con un diseño elegante y vanguardista, esta consola no solo es una pieza de tecnología de última generación, sino también un centro de diversión en tu sala de estar lorem</p>
+    </body>
+    <hr>
+    <p>Precio: 462.99$</p>
+    <h2>Ficha Técnica</h2>
+    <table>
+        <tr>
+            <td>Peso</td>
+            <td>1 libras</td>
+        </tr>
+        <tr>
+            <td>Dimensiones</td>
+            <td>30 x 20 x 30</td>
+        </tr>
+        <tr>
+            <td>Año de fabricación</td>
+            <td>2018</td>
+        </tr>
+    </table>
+</html>
