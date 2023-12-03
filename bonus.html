@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bonus</title>
+        <style>
+        .container{
+            display: flex;
+            /*flex-direction: column;*/
+            flex-flow: row wrap;
+            justify-content: space-between;
+            height: 600px;
+            border: 1px solid;
+            align-items: stretch; 
+        }
+        .container>div{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            
+        }
+
+        .container>div.larger{
+            width: 100px;
+            height: 200px;
+            background-color: rgb(255, 127, 153);
+            
+        }
+
+        .container>div.first{
+            order: 1;
+            
+        }
+
+        .container>div.second{
+            order: 2;
+            
+        }
+        </style>
+
+    </head>
+    <body>
+        Productos especiales
+        <div class="container">
+            <div class="first">1</div>
+            <div class="second">2</div>
+            <div>3</div>
+            <div class="larger">4</div>
+        </div>
+       
+    </body>
+</html>
