@@ -1,0 +1,19 @@
+$background: rgb(120, 23, 23);
+ 
+.details {
+    background-color: $background;
+}
+ 
+.container-header 
+{
+    background-color: $background;
+}
+
+.cell-header{
+    background-color:  $background;
+    font-weight: bold;
+}
+    
+#productoName{
+        color:  $background;
+}
