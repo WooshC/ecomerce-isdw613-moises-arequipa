@@ -40,7 +40,7 @@
                 animation-iteration-count:infinite ;
             }
             @keyframes bounce {
-                 0% { left: 0px; top: 0px; }
+                 0% { left: -40px; top: 0px; }
                 25% { left: 200px; top: 70px; }
                 50% { left: 400px; top: 0px; }
                 75% { left: 600px; top: 70px; } /* Nuevo punto intermedio */
@@ -60,7 +60,9 @@
             #container {
                 height: 100px;
                 border: 1px solid black;
-                 position: relative;
+                position: relative;
+                border-left: 5px solid rgb(31, 178, 58); /* Borde izquierdo azul */
+                 border-right: 5px solid rgb(31, 178, 58); /* Borde derecho azul */
                 overflow: hidden; /* Ocultar el contenido que se sale del contenedor */
             }
 
