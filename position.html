@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        #firstElement{
+            position: relative;
+            left: 30px;
+            width: 200px;
+            top: 20px;
+            height: 200px;
+            background-color: blue;
+            color: white;
+            z-index: 1;
+        }
+
+        #secondElement{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: white;
+            z-index: 2;
+        }
+
+        #container{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(37, 10, 135);
+            text-align: center;
+            color: rgb(235, 234, 234);
+        }
+
+        #child{
+            position: relative;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(55, 220, 204);
+            text-align: center;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="firstElement">Primer elementos</div>
+    <div id="secondElement">Primer elementos</div>
+
+    <div id="container">
+        <div id="child">
+            Componente hijo
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>

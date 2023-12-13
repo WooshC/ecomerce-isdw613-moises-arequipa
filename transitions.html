@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+         #transition1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /*transition-property: width;
+            transition-duration: 500ms;*/
+            transition: width 500ms;
+         }
+         #transition1:hover{
+            width: 500px;
+         }
+         #transition2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(55, 0, 255);
+            /*transition-property: width;
+            transition-duration: 500ms;*/
+            transition: width 500ms, height 500ms;
+         }
+        
+         #transition2:hover{
+            width: 500px;
+            height: 500px;
+         }
+         #transition3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 238, 0);
+            /*transition-property: width;
+            transition-duration: 500ms;*/
+            /*transition: width 500ms, height 500ms, background-color 3000ms;
+        */
+        transition: background-color 1s, width 500ms, height 500ms;
+        transition-timing-function: linear; 
+        }
+         #transition3:hover{
+            width: 500px;
+            height: 500px;
+            background-color: aquamarine;
+         }
+         #transition4{
+            width: 100px;
+            height: 100px;
+            color: rgb(22, 3, 3);
+            background-color: rgb(0, 255, 81);
+            border-radius: 6px;
+            border: solid;
+            /*transition-property: width;
+            transition-duration: 500ms;*/
+            /*transition: width 500ms, height 500ms, background-color 3000ms;
+        */
+        transition: border-radius 1s;
+        transition-delay:1s ;
+        }
+         #transition4:hover{
+           border-radius: 50%;
+         }
+
+        </style>
+    </head>
+    <body>
+        <div id="transition1"></div>
+        <div id="transition2"></div>
+        <div id="transition3"></div>
+        <img src="imagenes/71MbhtHabaL.jpg" id="transition4">
+    </body>
+</html>
