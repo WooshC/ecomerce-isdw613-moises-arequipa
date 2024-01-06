@@ -21,43 +21,98 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="contac.html">Contactanos</a></li>
         <!--ul>li*5{lista $}-->
-        <ul>
-            <li>lista 1</li>
-            <li>lista 2</li>
-            <li>lista 3</li>
-            <li>lista 4</li>
-            <li>lista 5</li>
-        </ul>
         <li>Productos</li>
         <li><a href="about.html" target="_blank">Acerca de...</a></li>
     </ul>
     <hr>
     <h1>Contáctenos</h1>
-    <form>
+    <form method="GET" action="/processForm.html" onsubmit="return validateform()">
         <table>
             <tr>
                 <td>
-                    <label>Nombre</label>
+                    <label for="name">Nombre</label>
                 </td>
                 <td>
-                    <input type="text"/>
+                    <input id='name'placeholder='Ingrese el nombre' type="text" onchange="changeInput()" name="name"/>
                 </td> 
             </tr>
             <tr>
-                <td> <label>E-mail</label></td>
-                <td> <input type="text"/> </td>
+                <td> <label for='email'>E-mail</label></td>
+                <td> <input id='email'name='email' placeholder='Ingrese un correo' type="text"/> </td>
             </tr>
             <tr> 
-                <td><label>Comentario</label> </td>
-                <td> <textarea cols="30" rows="10"></textarea> </td>
+                <td><label for="comentario">Comentario</label> </td>
+                <td> <textarea id='comentario' name="comentario" placeholder="Ingrese un comentario" cols="30" rows="10"></textarea> </td>
             </tr>  
-
+            <tr> 
+                <td><label>Sistemas Operativos</label> </td>
+            </tr> 
+            <tr> 
+                <td><label for="Windows">Windows</label> </td>
+                <td> <input id='Windows' name="OS" type="checkbox" value="Windows"></imput> </td>
+            </tr> 
+            <tr> 
+                <td><label for="Mac">Mac OS</label> </td>
+                <td> <input id='Mac' name="OS"  type="checkbox" value="Mac"></imput> </td>
+            </tr>
+            <tr> 
+                <td><label>Metodo de pago</label> </td>
+            </tr> 
+            <tr> 
+                <td><label for="credito">Credi card</label> </td>
+                <td> <input id='credito' name="payementMethod" type="radio" value="credito"></imput> </td>
+            </tr> 
+            <tr> 
+                <td><label for="paypal">Paypal</label> </td>
+                <td> <input id='paypal' name="payementMethod"  type="radio" value="paypal"></imput> </td>
+            </tr>
+            <tr> 
+                <td><label for="BitCoin">BitCoin</label> </td>
+                <td> <input id='BitCoin' name="payementMethod"  type="radio" value="BitCoin"></imput> </td>
+            </tr>
         </table>
+        <label for="clave">Clave</label>
+        <input id='clave' type="password" placeholder="Ingrese la clave">
         <br>
-        <input type="button" value="Enviar">
+        <label for="archivos">Archivos</label>
+        <input id="archivos" type="file">   
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+
+        <label for="Dely">Direccion de entrega</label>
+            <select id="Dely">
+            <option>Casa</option>
+            <option>Oficina</option>
+            <option>Otro</option>
+            </select>
  
     </form>
 </body>
+
+<script>
+    function traverseDOM(nodo){
+        var childNodes=nodo.childNodes
+        childNodes.forEach(element => {
+            console.log("=================")
+            console.log("Nodo"+ element.nodeName+ " , Tipo" + element.nodeType+ " valor: "+ element.nodeValue);
+            console.log("Nodo padre: " + element.parentNode);
+            if(element.hasChildNodes){
+                traverseDOM(element);
+            }        
+        });
+    }
+    traverseDOM(document.body);
+
+    function validateform(){
+        return false;
+    }
+    function changeInput() {
+
+        console.log('Valor del campo Nombre:', nombreValor);
+    }
+</script>
+
 </html>
 
        <!--        <label>Fecha</label>
